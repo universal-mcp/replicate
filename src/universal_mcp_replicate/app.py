@@ -28,7 +28,7 @@ class ReplicateApp(APIApplication):
             dict[str, Any]: OK / OK
 
         Tags:
-            Chat
+            Chat, important
         """
         request_body = {
             'input': input,
@@ -52,7 +52,7 @@ class ReplicateApp(APIApplication):
             dict[str, Any]: OK / OK / OK / OK / OK / OK / OK
 
         Tags:
-            Images
+            Images, important
         """
         if prediction_id is None:
             raise ValueError("Missing required parameter 'prediction_id'")
@@ -88,7 +88,7 @@ class ReplicateApp(APIApplication):
             dict[str, Any]: OK
 
         Tags:
-            Chat
+            Chat, important
         """
         request_body = {
             'input': input,
@@ -233,7 +233,7 @@ class ReplicateApp(APIApplication):
             dict[str, Any]: OK
 
         Tags:
-            Images
+            Images, important
         """
         request_body = {
             'input': input,
